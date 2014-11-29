@@ -9,7 +9,11 @@
 
 package com.greg.modularexosuits.block;
 
+import com.greg.modularexosuits.item.MESItems;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+
+import java.util.Random;
 
 public class NickelOreBlock extends BlockMES{
     public NickelOreBlock(){
@@ -22,4 +26,15 @@ public class NickelOreBlock extends BlockMES{
     public String getName(){
         return "nickelOre";
     }
+
+    public int quantityDropped(Random rand)
+    {
+        return rand.nextInt(4)+2;
+    }
+
+    public Item getItemDropped(int meta, Random rand, int fortune)
+    {
+        return MESItems.nickelDust;
+    }
+
 }
