@@ -19,6 +19,7 @@ public class MESItems {
     public static final ItemMESArmor exoBoots = new ItemExoBoots();
     public static final ItemMESArmor exoLeggings = new ItemExoLeggings();
     public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
+    public static final ItemMES vacuumChamber = new ItemVacuumChamber();
     public static void init(){
         GameRegistry.registerItem(exoBoots, "exoBoots");
         GameRegistry.registerItem(titaniumIngot, "titaniumIngot");
@@ -26,6 +27,6 @@ public class MESItems {
         GameRegistry.registerItem(nickelDust, "nickelDust");
         GameRegistry.registerItem(exoLeggings, "exoLeggings");
         GameRegistry.registerItem(exoHelmet, "exoHelmet");
-
+        GameRegistry.registerItem(vacuumChamber, "vacuumChamber");
     }
 }

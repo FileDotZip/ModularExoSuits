@@ -7,8 +7,15 @@
  * https://github.com/LikeTotallyGreg/ModularExoSuits/blob/master/LICENCE.txt
  */
 
-package com.greg.modularexosuits.item.armor;
+package com.greg.modularexosuits.item;
 
-public enum ArmorType {
-    HELMET, CHESTPLATE, LEGGINGS, BOOTS
+public class ItemVacuumChamber extends ItemMES {
+    public ItemVacuumChamber(){
+        super();
+    }
+
+    @Override
+    public String getName() {
+        return "vacuumChamber";
+    }
 }
