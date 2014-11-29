@@ -34,8 +34,8 @@ public class ExoSuitsGenerator implements IWorldGenerator {
         int startX = chunkX * 16 + 8;
         int startZ = chunkZ * 16 + 8;
 
-        this.generateVeins(world, random, startX, startZ, maxTitaniumVeinsPerChunk, 10, 35);
-        this.generateVeins(world, random, startX, startZ, maxNickelVeinsPerChunk, 10, 35);
+        this.generateVeins(world, random, startX, startZ, maxTitaniumVeinsPerChunk, 0, 35);
+        this.generateVeins(world, random, startX, startZ, maxNickelVeinsPerChunk, 0, 25);
     }
 
     private void generateVeins(World world, Random random, int startX, int startZ, int numVeins, int minY, int maxY){
