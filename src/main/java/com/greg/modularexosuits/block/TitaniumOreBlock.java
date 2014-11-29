@@ -11,7 +11,7 @@ package com.greg.modularexosuits.block;
 
 import net.minecraft.block.material.Material;
 
-public class TitaniumOreBlock extends BlockMES {
+public class TitaniumOreBlock extends BlockMESBase {
     public TitaniumOreBlock() {
         super(Material.rock);
         this.setHardness(5);

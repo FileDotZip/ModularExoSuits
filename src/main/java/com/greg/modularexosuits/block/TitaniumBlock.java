@@ -11,7 +11,7 @@ package com.greg.modularexosuits.block;
 
 import net.minecraft.block.material.Material;
 
-public class TitaniumBlock extends BlockMES{
+public class TitaniumBlock extends BlockMESBase {
     public TitaniumBlock(){
         super(Material.sponge);
         this.setHardness(5);

@@ -21,12 +21,11 @@ public class MESItems {
     public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
     public static final ItemMES vacuumChamber = new ItemVacuumChamber();
     public static void init(){
-        GameRegistry.registerItem(exoBoots, "exoBoots");
-        GameRegistry.registerItem(titaniumIngot, "titaniumIngot");
-        GameRegistry.registerItem(exoChestplate, "exoChestplate");
-        GameRegistry.registerItem(nickelDust, "nickelDust");
-        GameRegistry.registerItem(exoLeggings, "exoLeggings");
-        GameRegistry.registerItem(exoHelmet, "exoHelmet");
-        GameRegistry.registerItem(vacuumChamber, "vacuumChamber");
+        GameRegistry.registerItem(exoBoots, exoBoots.getName());
+        GameRegistry.registerItem(titaniumIngot, titaniumIngot.getName());
+        GameRegistry.registerItem(exoChestplate, exoChestplate.getName());
+        GameRegistry.registerItem(nickelDust, nickelDust.getName());
+        GameRegistry.registerItem(exoLeggings, exoLeggings.getName());
+        GameRegistry.registerItem(exoHelmet, exoHelmet.getName());
     }
 }

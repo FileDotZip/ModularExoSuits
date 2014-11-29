@@ -9,6 +9,15 @@
 
 package com.greg.modularexosuits.block;
 
-public interface BlockMES {
-    public String getName();
+import net.minecraft.block.material.Material;
+
+public class VacuumInductionSmelter extends BlockMESBase {
+    public VacuumInductionSmelter() {
+        super(Material.iron);
+    }
+
+    @Override
+    public String getName() {
+        return "vacuumInductionSmelter";
+    }
 }

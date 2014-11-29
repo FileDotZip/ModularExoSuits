@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class NickelOreBlock extends BlockMES{
+public class NickelOreBlock extends BlockMESBase {
     public NickelOreBlock(){
         super(Material.rock);
         this.setHardness(5);
