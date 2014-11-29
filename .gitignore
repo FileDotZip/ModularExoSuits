@@ -1,0 +1,8 @@
+#files and folder ignored by git
+.idea
+.gradle
+build
+eclipse
+*.iml
+*.ipr
+*.iws

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "modularexosuits",
+  "name": "Modular Exo Suits",
+  "description": "To Be Added",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Greg", "Barteks2x"],
+  "credits": "To Be Added",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
