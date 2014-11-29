@@ -20,19 +20,29 @@ import java.util.Random;
 
 public class ExoSuitsGenerator implements IWorldGenerator {
     private final WorldGenMinable titaniumGen;
+    private final WorldGenMinable nickelGen;
+
     private final int maxTitaniumVeinsPerChunk = 6;
+    private final int maxNickelVeinsPerChunk = 6;
 
     public ExoSuitsGenerator(){
         this.titaniumGen = new WorldGenMinable(MESBlocks.titaniumOre, 8);
+        this.nickelGen = new WorldGenMinable(MESBlocks.nickelOre, 8);
     }
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        int xStart = chunkX * 16 + 8;
-        int zStart = chunkZ * 16 + 8;
+        int startX = chunkX * 16 + 8;
+        int startZ = chunkZ * 16 + 8;
+
+        this.generateVeins(world, random, startX, startZ, maxTitaniumVeinsPerChunk, 10, 35);
+        this.generateVeins(world, random, startX, startZ, maxNickelVeinsPerChunk, 10, 35);
+    }
+
+    private void generateVeins(World world, Random random, int startX, int startZ, int numVeins, int minY, int maxY){
         for(int i = 0; i < maxTitaniumVeinsPerChunk; i++){
-            int x = xStart+ random.nextInt(16);
-            int z = zStart+ random.nextInt(16);
-            int y = random.nextInt(35-10)+10;
+            int x = startX+ random.nextInt(16);
+            int z = startZ+ random.nextInt(16);
+            int y = random.nextInt(maxY-minY)+minY;
             titaniumGen.generate(world, random, x,y,z);
         }
     }
