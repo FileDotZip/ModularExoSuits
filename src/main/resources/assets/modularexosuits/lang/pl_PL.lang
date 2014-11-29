@@ -1,1 +1,8 @@
+tile.titaniumBlock.name=Blok Tytanu
 tile.titaniumOre.name=Ruda Tytanu
+tile.nickelOre.name=Ruda Niklu
+
+itemGroup.modularexosuits=Exo Suits
+
+item.titaniumIngot.name=Sztabka Tytanu
+item.titaniumChestplate.name=Exo Chestplate
