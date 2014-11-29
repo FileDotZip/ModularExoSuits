@@ -9,15 +9,16 @@
 
 package com.greg.modularexosuits.item;
 
+import com.greg.modularexosuits.item.armor.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class MESItems {
     public static final ItemMES titaniumIngot = new ItemTitaniumIngot();
-    public static final ItemMES exoChestplate = new ItemExoChestplate();
+    public static final ItemMESArmor exoChestplate = new ItemExoChestplate();
     public static final ItemMES nickelDust = new ItemNickelDust();
-    public static final ItemMES exoBoots = new ItemExoBoots();
-    public static final ItemMES exoLeggings = new ItemExoLeggings();
-    public static final ItemMES exoHelmet = new ItemExoHelmet();
+    public static final ItemMESArmor exoBoots = new ItemExoBoots();
+    public static final ItemMESArmor exoLeggings = new ItemExoLeggings();
+    public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
     public static void init(){
         GameRegistry.registerItem(exoBoots, "exoBoots");
         GameRegistry.registerItem(titaniumIngot, "titaniumIngot");
