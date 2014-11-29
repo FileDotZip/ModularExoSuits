@@ -9,13 +9,13 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemTitaniumChestplate extends ItemMES{
-    public ItemTitaniumChestplate(){
+public class ItemExoLeggings extends ItemMES{
+    public ItemExoLeggings(){
         super();
     }
 
     @Override
     public String getName() {
-        return "titaniumChestplate";
+        return "exoLeggings";
     }
 }

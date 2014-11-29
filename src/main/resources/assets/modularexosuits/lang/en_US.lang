@@ -5,5 +5,8 @@ tile.nickelOre.name=Nickel Ore
 itemGroup.modularexosuits=Exo Suits
 
 item.titaniumIngot.name=Titanium Ingot
-item.titaniumChestplate.name=Exo Chestplate
+item.exoChestplate.name=Exo Chestplate
 item.nickelDust.name=Nickel Dust
+item.exoBoots.name=Exo Boots
+item.exoLeggings.name=Exo Leggings
+item.exoHelmet.name=Exo Helmet
