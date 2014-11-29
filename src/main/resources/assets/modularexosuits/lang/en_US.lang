@@ -1,6 +1,7 @@
 tile.titaniumBlock.name=Titanium Block
 tile.titaniumOre.name=Titanium Ore
 tile.nickelOre.name=Nickel Ore
+tile.vacuumInductionSmelter.name= Vacuum Induction Smelter
 
 itemGroup.modularexosuits=Exo Suits
 
