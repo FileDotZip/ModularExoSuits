@@ -11,7 +11,7 @@ package com.greg.modularexosuits.block;
 
 import net.minecraft.block.material.Material;
 
-public class VacuumInductionSmelter extends BlockMESBase {
+public class VacuumInductionSmelter extends SidedBlockMES {
     public VacuumInductionSmelter() {
         super(Material.iron);
     }
