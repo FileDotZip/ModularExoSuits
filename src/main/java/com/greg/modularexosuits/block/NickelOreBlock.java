@@ -29,7 +29,7 @@ public class NickelOreBlock extends BlockMESBase {
 
     public int quantityDropped(Random rand)
     {
-        return rand.nextInt(4)+2;
+        return 6;
     }
 
     public Item getItemDropped(int meta, Random rand, int fortune)

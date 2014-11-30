@@ -101,7 +101,7 @@ public class Recipies {
         GameRegistry.addRecipe(new ItemStack(MESItems.titaniumIngot),"NNN", "NNN", "NNN", 'N', new ItemStack(MESItems.titaniumNugget, 9));
 
         GameRegistry.addSmelting(MESBlocks.titaniumOre, new ItemStack(MESItems.titaniumIngot), 0.4f);
-        GameRegistry.addSmelting(MESBlocks.nickelOre, new ItemStack(MESItems.nickelDust, 2), 0.4f);
+        GameRegistry.addSmelting(MESBlocks.nickelOre, new ItemStack(MESItems.nickelDust, MESBlocks.nickelOre.quantityDropped(0, 0, null)), 0.4f);
         //GameRegistry.addShapelessRecipe(new ItemStack(MESItems.titaniumPlate), new ItemStack(MESItems.titaniumIngot), new ItemStack(MESItems.titaniumIngot));
         //GameRegistry.addRecipe(new ShapedOreRecipe());
         //GameRegistry.addRecipe(new ShapelessOreRecipe());
