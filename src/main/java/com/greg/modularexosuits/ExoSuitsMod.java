@@ -10,6 +10,8 @@
 package com.greg.modularexosuits;
 
 import com.greg.modularexosuits.block.MESBlocks;
+import com.greg.modularexosuits.creativetab.CreativeTabMES;
+import com.greg.modularexosuits.init.Recipies;
 import com.greg.modularexosuits.item.MESItems;
 import com.greg.modularexosuits.worldgen.ExoSuitsGenerator;
 import com.greg.modularexosuits.reference.Reference;
@@ -33,6 +35,7 @@ public class ExoSuitsMod
     @EventHandler
     public void init(FMLInitializationEvent event){
         System.out.println("init");
+        Recipies.init();
     }
 
     @EventHandler
