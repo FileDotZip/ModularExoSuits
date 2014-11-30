@@ -31,6 +31,7 @@ public class MESItems {
     public static final ItemMESBase iccs = new ItemICCS();
     public static final ItemMESBase fusionReactorInert = new ModuleFusionReactorInert();
     public static final ItemMESBase fusionReactorActive = new ModuleFusionReactorActive();
+    public static final ItemMESBase titaniumPlating = new ModuleTitaniumPlating();
 
     public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
     public static final ItemMESArmor exoChestplate = new ItemExoChestplate();
@@ -64,6 +65,9 @@ public class MESItems {
         iccs.register();
         fusionReactorInert.register();
         fusionReactorActive.register();
+        titaniumPlating.register();
+
+
         poke.register();
     }
 }
