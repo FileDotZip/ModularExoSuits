@@ -55,12 +55,11 @@ public class Recipies {
                 'C', new ItemStack(MESItems.controlCircuit));
 
         GameRegistry.addRecipe(new ItemStack(MESItems.controlCircuit, 2),
-                "LrL",
-                "RPR",
-                "LpL",
-                'L', new ItemStack(Blocks.lapis_block),
+                "prp",
+                "RQR",
+                "ppp",
+                'Q', new ItemStack(Items.quartz),
                 'p', new ItemStack(MESItems.titaniumPlate),
-                'P', new ItemStack(Items.paper),
                 'r', new ItemStack(Items.repeater),
                 'R', new ItemStack(Items.redstone));
 
