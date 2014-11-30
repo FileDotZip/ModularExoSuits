@@ -23,7 +23,7 @@ public class MESItems {
     public static final ItemMES titaniumPlate = new ItemTitaniumPlate();
     public static final ItemMES valve = new ItemValve();
     public static final PrivateMESItem poke = new ItemPoke();
-    public static final ItemMES vacuumInductionSmelterCore = new vacuumInductionSmelterCore();
+    public static final ItemMES vacuumInductionSmelterCore = new VacuumInductionSmelterCore();
     public static final ItemMES controlCircuit = new ItemControlCircuit();
     public static final ItemMES vacuumPump = new ItemVacuumPump();
     public static final ItemMES pressureRegulator = new ItemPressureRegulator();
