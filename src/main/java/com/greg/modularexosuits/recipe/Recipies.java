@@ -18,11 +18,11 @@ import net.minecraft.item.ItemStack;
 
 public class Recipies {
     public static void init(){
-        GameRegistry.addRecipe(new ItemStack(MESItems.titaniumPlate),
+        GameRegistry.addRecipe(new ItemStack(MESItems.titaniumPlate, 3),
                 "sss",
                 "sss",
                 "   ",
-                's', new ItemStack(MESItems.titaniumIngot, 3));
+                's', new ItemStack(MESItems.titaniumIngot));
 
         GameRegistry.addRecipe(new ItemStack(MESItems.vacuumChamber),
                 "ipi",
