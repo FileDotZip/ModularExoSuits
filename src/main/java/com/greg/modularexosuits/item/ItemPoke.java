@@ -16,6 +16,7 @@ public class ItemPoke extends PrivateMESItem{
         this.setUnlocalizedName(this.getName());
         this.setTextureName(String.format("%s:%s", Reference.MOD_ID, this.getName()));
     }
+
     public String getName() {
         return "poke";
     }

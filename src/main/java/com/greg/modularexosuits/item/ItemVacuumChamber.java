@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemVacuumChamber extends ItemMES {
+public class ItemVacuumChamber extends ItemMESBase {
     public ItemVacuumChamber(){
         super();
     }

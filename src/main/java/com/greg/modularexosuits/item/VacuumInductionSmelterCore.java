@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class VacuumInductionSmelterCore extends ItemMES{
+public class VacuumInductionSmelterCore extends ItemMESBase {
     public VacuumInductionSmelterCore(){
         super();
     }

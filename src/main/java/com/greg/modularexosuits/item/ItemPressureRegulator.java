@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemPressureRegulator extends ItemMES{
+public class ItemPressureRegulator extends ItemMESBase {
     public ItemPressureRegulator(){
         super();
     }

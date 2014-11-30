@@ -23,7 +23,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 @Mod(modid = Reference.MOD_ID, version = Reference.VERSION)
 public class ExoSuitsMod
 {
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         MESBlocks.init();
@@ -36,7 +35,4 @@ public class ExoSuitsMod
         System.out.println("init");
         Recipies.init();
     }
-
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {}
 }

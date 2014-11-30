@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemControlCircuit extends ItemMES {
+public class ItemControlCircuit extends ItemMESBase {
     public ItemControlCircuit(){
         super();
     }

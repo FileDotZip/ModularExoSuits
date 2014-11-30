@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemValve extends ItemMES {
+public class ItemValve extends ItemMESBase {
     public ItemValve(){
         super();
     }

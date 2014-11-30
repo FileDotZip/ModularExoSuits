@@ -7,15 +7,8 @@
  * https://github.com/LikeTotallyGreg/ModularExoSuits/blob/master/LICENCE.txt
  */
 
-package com.greg.modularexosuits.item;
+package com.greg.modularexosuits;
 
-public class ItemTitaniumIngot extends ItemMESBase {
-    public ItemTitaniumIngot(){
-        super();
-    }
-
-    @Override
-    public String getName() {
-        return "titaniumIngot";
-    }
+public interface Registrable {
+    public void register();
 }

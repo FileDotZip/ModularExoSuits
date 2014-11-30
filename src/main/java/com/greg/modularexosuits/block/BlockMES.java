@@ -9,6 +9,8 @@
 
 package com.greg.modularexosuits.block;
 
-public interface BlockMES {
+import com.greg.modularexosuits.Registrable;
+
+public interface BlockMES extends Registrable{
     public String getName();
 }

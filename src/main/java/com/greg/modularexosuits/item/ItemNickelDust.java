@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemNickelDust extends ItemMES {
+public class ItemNickelDust extends ItemMESBase {
     public ItemNickelDust(){
         super();
     }

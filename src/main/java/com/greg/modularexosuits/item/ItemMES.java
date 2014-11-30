@@ -9,18 +9,8 @@
 
 package com.greg.modularexosuits.item;
 
-import com.greg.modularexosuits.creativetab.CreativeTabMES;
-import com.greg.modularexosuits.reference.Reference;
-import net.minecraft.item.Item;
+import com.greg.modularexosuits.Registrable;
 
-public abstract class ItemMES extends Item{
-    public ItemMES()
-    {
-        super();
-        this.setCreativeTab(CreativeTabMES.MES_TAB);
-        this.setUnlocalizedName(this.getName());
-        this.setTextureName(String.format("%s:%s", Reference.MOD_ID, this.getName()));
-    }
-
-    public abstract String getName();
+public interface ItemMES extends Registrable{
+    public String getName();
 }

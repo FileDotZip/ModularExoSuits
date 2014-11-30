@@ -10,12 +10,14 @@
 package com.greg.modularexosuits.item.armor;
 
 import com.greg.modularexosuits.creativetab.CreativeTabMES;
+import com.greg.modularexosuits.item.ItemMES;
 import com.greg.modularexosuits.reference.Reference;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public abstract class ItemMESArmor extends ItemArmor {
+public abstract class ItemMESArmor extends ItemArmor implements ItemMES {
     public ItemMESArmor(ArmorMaterial material, ArmorType type) {
         super(material, 0, type.ordinal());
         this.setCreativeTab(CreativeTabMES.MES_TAB);
@@ -28,7 +30,8 @@ public abstract class ItemMESArmor extends ItemArmor {
         return String.format("%s:models/armor/%s_%d.png", Reference.MOD_ID, this.getTextureName(), textureId);
     }
 
-    public abstract String getName();
-
+    public void register(){
+        GameRegistry.registerItem(this, this.getName());
+    }
     public abstract String getTextureName();
 }

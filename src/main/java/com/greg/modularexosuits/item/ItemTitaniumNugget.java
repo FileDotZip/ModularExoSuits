@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemTitaniumNugget extends ItemMES {
+public class ItemTitaniumNugget extends ItemMESBase {
     public ItemTitaniumNugget(){
         super();
     }

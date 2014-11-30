@@ -9,15 +9,16 @@
 
 package com.greg.modularexosuits.item;
 
+import com.greg.modularexosuits.creativetab.CreativeTabMES;
 import com.greg.modularexosuits.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
-public abstract class PrivateMESItem extends Item implements ItemMES
-{
-    public PrivateMESItem()
+public abstract class ItemMESBase extends Item implements ItemMES{
+    public ItemMESBase()
     {
         super();
+        this.setCreativeTab(CreativeTabMES.MES_TAB);
         this.setUnlocalizedName(this.getName());
         this.setTextureName(String.format("%s:%s", Reference.MOD_ID, this.getName()));
     }

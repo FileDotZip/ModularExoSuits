@@ -11,6 +11,7 @@ package com.greg.modularexosuits.block;
 
 import com.greg.modularexosuits.creativetab.CreativeTabMES;
 import com.greg.modularexosuits.reference.Reference;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -22,5 +23,9 @@ public abstract class BlockMESBase extends Block implements  BlockMES{
         this.setCreativeTab(CreativeTabMES.MES_TAB);
         this.setBlockName(this.getName());
         this.setBlockTextureName(String.format("%s:%s", Reference.MOD_ID, this.getName()));
+    }
+
+    public void register(){
+        GameRegistry.registerBlock(this, this.getName());
     }
 }

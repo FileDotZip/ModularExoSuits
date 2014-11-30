@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemNitinolIngot extends ItemMES {
+public class ItemNitinolIngot extends ItemMESBase {
     public ItemNitinolIngot(){
         super();
     }

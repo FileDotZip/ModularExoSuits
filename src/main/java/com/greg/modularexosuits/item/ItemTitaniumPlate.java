@@ -8,8 +8,7 @@
  */
 
 package com.greg.modularexosuits.item;
-
-public class ItemTitaniumPlate extends ItemMES {
+public class ItemTitaniumPlate extends ItemMESBase {
     public ItemTitaniumPlate(){
         super();
     }

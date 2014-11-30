@@ -12,14 +12,20 @@ package com.greg.modularexosuits.block;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class MESBlocks {
+
     public static final BlockMESBase titaniumBlock = new TitaniumBlock();
     public static final BlockMESBase titaniumOre = new TitaniumOreBlock();
+
     public static final BlockMESBase nickelOre = new NickelOreBlock();
+
     public static final BlockMESBase vacuumInductionSmelter = new VacuumInductionSmelter();
+
     public static void init(){
-        GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getName());
-        GameRegistry.registerBlock(titaniumOre, titaniumOre.getName());
-        GameRegistry.registerBlock(nickelOre, nickelOre.getName());
-        GameRegistry.registerBlock(vacuumInductionSmelter, vacuumInductionSmelter.getName());
+        titaniumBlock.register();
+        titaniumOre.register();
+
+        nickelOre.register();
+
+        vacuumInductionSmelter.register();
     }
 }

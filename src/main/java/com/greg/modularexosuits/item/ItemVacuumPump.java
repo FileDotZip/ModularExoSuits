@@ -9,7 +9,7 @@
 
 package com.greg.modularexosuits.item;
 
-public class ItemVacuumPump extends ItemMES{
+public class ItemVacuumPump extends ItemMESBase {
     public ItemVacuumPump(){
         super();
     }
