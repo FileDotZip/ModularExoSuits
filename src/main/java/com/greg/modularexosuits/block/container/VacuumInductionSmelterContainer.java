@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) Barteks2x and LikeTotallyGreg, 2014
+ * https://github.com/LikeTotallyGreg/ModularExoSuits
+ *
+ * This mod is distributed under the terms of the Minecraft Mod Public
+ * License 1.0, or MMPL. Please check the contents of the license located in
+ * https://github.com/LikeTotallyGreg/ModularExoSuits/blob/master/LICENCE.txt
+ */
+
 package com.greg.modularexosuits.block.container;
 
 import com.greg.modularexosuits.block.tileentity.VacuumInductionSmelterTileEntity;
@@ -53,13 +62,13 @@ public class VacuumInductionSmelterContainer extends Container {
             stack = stackInSlot.copy();
 
             //merges the item into player inventory since its in the tileEntity
-            if (slot < 9) {
-                if (!this.mergeItemStack(stackInSlot, 0, 35, true)) {
+            if (slot < tileEntity.getSizeInventory()) {
+                if (!this.mergeItemStack(stackInSlot, tileEntity.getSizeInventory(), tileEntity.getSizeInventory()+35, true)) {
                     return null;
                 }
             }
             //places it into the tileEntity is possible since its in the player inventory
-            else if (!this.mergeItemStack(stackInSlot, 0, 9, false)) {
+            else if (!this.mergeItemStack(stackInSlot, 0, tileEntity.getSizeInventory(), false)) {
                 return null;
             }
 
