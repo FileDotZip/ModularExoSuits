@@ -10,6 +10,8 @@
 package com.greg.modularexosuits;
 
 import com.greg.modularexosuits.block.MESBlocks;
+import com.greg.modularexosuits.block.tileentity.VacuumInductionSmelterTileEntity;
+import com.greg.modularexosuits.gui.GuiHandler;
 import com.greg.modularexosuits.recipe.Recipies;
 import com.greg.modularexosuits.item.MESItems;
 import com.greg.modularexosuits.worldgen.ExoSuitsGenerator;
@@ -18,15 +20,22 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, version = Reference.VERSION)
 public class ExoSuitsMod
 {
+    @Mod.Instance(Reference.MOD_ID)
+    public static ExoSuitsMod instance;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         MESBlocks.init();
         MESItems.init();
         ExoSuitsGenerator.init();
+        GameRegistry.registerTileEntity(VacuumInductionSmelterTileEntity.class, "VacuumInductionSmelter");
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     }
 
     @EventHandler
