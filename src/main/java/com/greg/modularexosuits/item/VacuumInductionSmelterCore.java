@@ -7,6 +7,6 @@ public class VacuumInductionSmelterCore extends ItemMES{
 
     @Override
     public String getName() {
-        return "VacuumInductionSmelterCore";
+        return "vacuumInductionSmelterCore";
     }
 }
