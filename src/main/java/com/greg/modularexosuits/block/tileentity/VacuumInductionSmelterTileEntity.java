@@ -37,17 +37,17 @@ public class VacuumInductionSmelterTileEntity extends TileEntity implements IInv
     }
 
     @Override
-    public ItemStack decrStackSize(int slot, int by) {
-        ItemStack stack = items[slot];
-        if(stack == null){
-            return null;
-        }
-        if(stack.stackSize <= by){
-            return null;
-        }
-        stack = stack.splitStack(by);
-        if(stack == null || stack.stackSize == 0){
-            this.setInventorySlotContents(slot, null);
+    public ItemStack decrStackSize(int slot, int amt) {
+        ItemStack stack = getStackInSlot(slot);
+        if (stack != null) {
+            if (stack.stackSize <= amt) {
+                setInventorySlotContents(slot, null);
+            } else {
+                stack = stack.splitStack(amt);
+                if (stack.stackSize == 0) {
+                    setInventorySlotContents(slot, null);
+                }
+            }
         }
         return stack;
     }
@@ -102,10 +102,6 @@ public class VacuumInductionSmelterTileEntity extends TileEntity implements IInv
 
     @Override
     public boolean isItemValidForSlot(int i, ItemStack stack) {
-        SlotType type = getSlotType(i);
-        if(type == SlotType.OUT){
-            return false;
-        }
         return true;
     }
 

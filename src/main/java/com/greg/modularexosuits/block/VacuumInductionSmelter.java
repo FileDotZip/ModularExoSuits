@@ -87,7 +87,6 @@ public class VacuumInductionSmelter extends BlockContainer implements BlockMES {
         if (tileEntity == null || player.isSneaking()) {
             return false;
         }
-        //code to open gui explained later
         player.openGui(ExoSuitsMod.instance, 0, world, x, y, z);
         return true;
     }
