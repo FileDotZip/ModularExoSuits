@@ -28,6 +28,7 @@ public class MESItems {
     public static final ItemMESBase vacuumPump = new ItemVacuumPump();
 
     public static final ItemMESBase controlCircuit = new ItemControlCircuit();
+    public static final ItemMESBase iccs = new ItemICCS();
 
     public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
     public static final ItemMESArmor exoChestplate = new ItemExoChestplate();
@@ -58,6 +59,7 @@ public class MESItems {
         vacuumPump.register();
 
         controlCircuit.register();
+        iccs.register();
 
         poke.register();
     }
