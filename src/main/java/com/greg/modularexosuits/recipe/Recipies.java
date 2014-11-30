@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) Barteks2x and LikeTotallyGreg, 2014
+ * https://github.com/LikeTotallyGreg/ModularExoSuits
+ *
+ * This mod is distributed under the terms of the Minecraft Mod Public
+ * License 1.0, or MMPL. Please check the contents of the license located in
+ * https://github.com/LikeTotallyGreg/ModularExoSuits/blob/master/LICENCE.txt
+ */
+
 package com.greg.modularexosuits.recipe;
 
 import com.greg.modularexosuits.block.MESBlocks;
@@ -88,6 +97,8 @@ public class Recipies {
                 'i', new ItemStack(MESItems.titaniumIngot),
                 'P', new ItemStack(MESItems.titaniumPlate),
                 'V', new ItemStack(MESItems.valve));
+        GameRegistry.addShapelessRecipe(new ItemStack(MESItems.titaniumNugget, 9), new ItemStack(MESItems.titaniumIngot));
+        GameRegistry.addRecipe(new ItemStack(MESItems.titaniumIngot),"NNN", "NNN", "NNN", 'N', new ItemStack(MESItems.titaniumNugget, 9));
 
         GameRegistry.addSmelting(MESBlocks.titaniumOre, new ItemStack(MESItems.titaniumIngot), 0.4f);
         GameRegistry.addSmelting(MESBlocks.nickelOre, new ItemStack(MESItems.nickelDust, 2), 0.4f);
