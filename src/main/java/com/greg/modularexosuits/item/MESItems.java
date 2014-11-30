@@ -27,6 +27,7 @@ public class MESItems {
     public static final ItemMES controlCircuit = new ItemControlCircuit();
     public static final ItemMES vacuumPump = new ItemVacuumPump();
     public static final ItemMES pressureRegulator = new ItemPressureRegulator();
+    public static final ItemMES titaniumNugget = new ItemTitaniumNugget();
     public static void init(){
         GameRegistry.registerItem(exoBoots, exoBoots.getName());
         GameRegistry.registerItem(titaniumIngot, titaniumIngot.getName());
@@ -42,5 +43,6 @@ public class MESItems {
         GameRegistry.registerItem(controlCircuit, controlCircuit.getName());
         GameRegistry.registerItem(vacuumPump, vacuumPump.getName());
         GameRegistry.registerItem(pressureRegulator, pressureRegulator.getName());
+        GameRegistry.registerItem(titaniumNugget, titaniumNugget.getName());
     }
 }
