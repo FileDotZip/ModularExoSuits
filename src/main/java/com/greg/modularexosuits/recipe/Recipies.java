@@ -47,6 +47,15 @@ public class Recipies {
                 'G', new ItemStack(Blocks.gravel),
                 'C', new ItemStack(Items.clay_ball));
 
+        GameRegistry.addRecipe(new ItemStack(MESItems.titaniumPlating),
+                "PiP",
+                "PDP",
+                "PiP",
+                'D', new ItemStack(Blocks.diamond_block),
+                'P', new ItemStack(MESItems.titaniumPlate),
+                'i', new ItemStack(Items.iron_ingot)
+                );
+
         GameRegistry.addRecipe(new ItemStack(MESBlocks.titaniumBlock),
                 "III",
                 "III",
