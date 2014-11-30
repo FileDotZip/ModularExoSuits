@@ -36,7 +36,7 @@ public class Recipies {
                 "LpL",
                 "ipi",
                 "iii",
-                'i', new ItemStack(MESItems.titaniumIngot),
+                'i', new ItemStack(Items.iron_ingot),
                 'p', new ItemStack(MESItems.titaniumPlate),
                 'L', new ItemStack(Items.leather));
 
@@ -85,7 +85,7 @@ public class Recipies {
                 "GpG",
                 "IPI",
                 "III",
-                'I', new ItemStack(MESItems.titaniumIngot),
+                'I', new ItemStack(Items.iron_ingot),
                 'P', new ItemStack(MESItems.titaniumPlate),
                 'G', new ItemStack(Blocks.glass),
                 'p', new ItemStack(Items.paper));
@@ -94,7 +94,7 @@ public class Recipies {
                 "PPP",
                 "V V",
                 "iPi",
-                'i', new ItemStack(MESItems.titaniumIngot),
+                'i', new ItemStack(Items.iron_ingot),
                 'P', new ItemStack(MESItems.titaniumPlate),
                 'V', new ItemStack(MESItems.valve));
         GameRegistry.addShapelessRecipe(new ItemStack(MESItems.titaniumNugget, 9), new ItemStack(MESItems.titaniumIngot));
