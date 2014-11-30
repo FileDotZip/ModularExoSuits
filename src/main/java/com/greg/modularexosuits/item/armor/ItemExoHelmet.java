@@ -9,6 +9,8 @@
 
 package com.greg.modularexosuits.item.armor;
 
+import com.greg.modularexosuits.util.ArmorType;
+
 public class ItemExoHelmet extends ItemMESArmor {
     public ItemExoHelmet(){
         super(ExoArmorMaterial.EXO, ArmorType.HELMET);

@@ -9,8 +9,6 @@
 
 package com.greg.modularexosuits.block;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-
 public class MESBlocks {
 
     public static final BlockMESBase titaniumBlock = new TitaniumBlock();

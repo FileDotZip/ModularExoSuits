@@ -12,6 +12,7 @@ package com.greg.modularexosuits.item.armor;
 import com.greg.modularexosuits.creativetab.CreativeTabMES;
 import com.greg.modularexosuits.item.ItemMES;
 import com.greg.modularexosuits.reference.Reference;
+import com.greg.modularexosuits.util.ArmorType;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;

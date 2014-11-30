@@ -14,7 +14,6 @@ import com.greg.modularexosuits.recipe.Recipies;
 import com.greg.modularexosuits.item.MESItems;
 import com.greg.modularexosuits.worldgen.ExoSuitsGenerator;
 import com.greg.modularexosuits.reference.Reference;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

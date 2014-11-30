@@ -9,11 +9,15 @@
 
 package com.greg.modularexosuits.block;
 
+import com.greg.modularexosuits.util.BlockSide;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.World;
 
 public abstract class SidedBlockMES extends BlockMESBase {
 
@@ -42,9 +46,15 @@ public abstract class SidedBlockMES extends BlockMESBase {
         }
     }
 
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack itemStack) {
+        int meta = BlockSide.getDirectionFacing(entity);
+        world.setBlockMetadataWithNotify(x, y, z, meta, 2);
+    }
+
+
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int beta)
+    public IIcon getIcon(int side, int meta)
     {
-        return this.icons[side];
+        return this.icons[BlockSide.getRotatedSide(side, meta).ordinal()];
     }
 }

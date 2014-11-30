@@ -7,7 +7,7 @@
  * https://github.com/LikeTotallyGreg/ModularExoSuits/blob/master/LICENCE.txt
  */
 
-package com.greg.modularexosuits.item.armor;
+package com.greg.modularexosuits.util;
 
 public enum ArmorType {
     HELMET, CHESTPLATE, LEGGINGS, BOOTS
