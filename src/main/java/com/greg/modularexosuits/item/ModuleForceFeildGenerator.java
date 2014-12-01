@@ -9,13 +9,13 @@
 
 package com.greg.modularexosuits.item;
 
-public class ModuleVectorFeildGenerator extends ItemMESBase {
-    public ModuleVectorFeildGenerator(){
+public class ModuleForceFeildGenerator extends ItemMESBase{
+    public ModuleForceFeildGenerator(){
         super();
     }
 
     @Override
     public String getName() {
-        return "vectorFeildGenerator";
+        return "forceFeildGenerator";
     }
 }

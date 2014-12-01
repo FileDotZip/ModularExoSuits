@@ -35,7 +35,7 @@ public class MESItems {
     public static final ItemMESBase ionThruster = new ModuleIonThruster();
     public static final ItemMESBase servo = new ModuleServo();
     public static final ItemMESBase pulseHeatGenerator = new ModulePulseHeatGenerator();
-    public static final ItemMESBase vectorFeildGenerator = new ModuleVectorFeildGenerator();
+    public static final ItemMESBase forceFeildGenerator = new ModuleForceFeildGenerator();
     public static final ItemMESBase shockAbsorber = new ModuleShockAbsorber();
     public static final ItemMESBase autoFeeder = new ModuleAutoFeeder();
 
@@ -75,7 +75,7 @@ public class MESItems {
         ionThruster.register();
         servo.register();
         pulseHeatGenerator.register();
-        vectorFeildGenerator.register();
+        forceFeildGenerator.register();
         shockAbsorber.register();
         autoFeeder.register();
 

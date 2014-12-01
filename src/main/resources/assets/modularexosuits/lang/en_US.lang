@@ -30,7 +30,7 @@ item.titaniumPlating.name=Titanium Alloy Plating [M]
 item.ionThruster.name=Ion Thruster [M]
 item.servo.name=Servo [M]
 item.pulseHeatGenerator.name=Pulse Heat Generator [M]
-item.vectorFeildGenerator.name=Vector Feild Generator [M]
+item.forceFeildGenerator.name=Force Feild Generator [M]
 item.shockAbsorber.name=Shock Absorber [M]
 item.autoFeeder.name=Auto Feeder [M]
 
