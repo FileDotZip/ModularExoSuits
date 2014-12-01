@@ -15,7 +15,6 @@ public class MESBlocks {
     public static final BlockMESBase titaniumOre = new TitaniumOreBlock();
 
     public static final BlockMESBase nickelOre = new NickelOreBlock();
-    public static final BlockMESBase lithiumOre = new LithiumOre();
 
     public static final VacuumInductionSmelter vacuumInductionSmelter = new VacuumInductionSmelter();
 
@@ -24,7 +23,6 @@ public class MESBlocks {
         titaniumOre.register();
 
         nickelOre.register();
-        lithiumOre.register();
 
         vacuumInductionSmelter.register();
     }

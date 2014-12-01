@@ -21,16 +21,13 @@ import java.util.Random;
 public class ExoSuitsGenerator implements IWorldGenerator {
     private final WorldGenMinable titaniumGen;
     private final WorldGenMinable nickelGen;
-    private final WorldGenMinable lithiumGen;
 
     private final int maxTitaniumVeinsPerChunk = 6;
     private final int maxNickelVeinsPerChunk = 6;
-    private final int maxLithiumVeinsPerChunk = 1;
 
     public ExoSuitsGenerator(){
         this.titaniumGen = new WorldGenMinable(MESBlocks.titaniumOre, 8);
         this.nickelGen = new WorldGenMinable(MESBlocks.nickelOre, 8);
-        this.lithiumGen = new WorldGenMinable(MESBlocks.lithiumOre, 2);
     }
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
@@ -39,7 +36,6 @@ public class ExoSuitsGenerator implements IWorldGenerator {
 
         this.generateVeins(world, random, titaniumGen, startX, startZ, maxTitaniumVeinsPerChunk, 0, 35);
         this.generateVeins(world, random, nickelGen, startX, startZ, maxNickelVeinsPerChunk, 0, 25);
-        this.generateVeins(world, random, lithiumGen, startX, startZ, maxLithiumVeinsPerChunk, 0, 10);
     }
 
     private void generateVeins(World world, Random random, WorldGenMinable gen, int startX, int startZ, int numVeins, int minY, int maxY){
