@@ -2,12 +2,14 @@ tile.titaniumBlock.name=Titanium Block
 tile.titaniumOre.name=Titanium Ore
 tile.nickelOre.name=Nickel Ore
 tile.vacuumInductionSmelter.name= Vacuum Induction Smelter
+tile.lithiumOre.name=Lithium Ore
 
 itemGroup.modularexosuits=Exo Suits
 
 item.titaniumIngot.name=Titanium Ingot
 item.exoChestplate.name=Exo Chestplate
 item.nickelDust.name=Nickel Dust
+item.lithiumDust.name=Lithium Dust
 item.exoBoots.name=Exo Boots
 item.exoLeggings.name=Exo Leggings
 item.exoHelmet.name=Exo Helmet
@@ -25,5 +27,11 @@ item.iccs.name=ICCS [M] (Inteligent Central Control System)
 item.fusionReactorInert.name=Fusion Reactor [M] (Inert)
 item.fusionReactorActive.name=Fusion Reactor [M] (Active)
 item.titaniumPlating.name=Titanium Alloy Plating [M]
+item.ionThruster.name=Ion Thruster [M]
+item.servo.name=Servo [M]
+item.pulseHeatGenerator.name=Pulse Heat Generator [M]
+item.vectorFeildGenerator.name=Vector Feild Generator [M]
+item.shockAbsorber.name=Shock Absorber [M]
+item.autoFeeder.name=Auto Feeder [M]
 
 container.inventory.vacuumInductionSmelter=Alloy Furnace

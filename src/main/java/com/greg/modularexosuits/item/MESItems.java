@@ -17,6 +17,7 @@ public class MESItems {
     public static final ItemMESBase titaniumPlate = new ItemTitaniumPlate();
 
     public static final ItemMESBase nickelDust = new ItemNickelDust();
+    public static final ItemMESBase lithiumDust = new ItemLithiumDust();
 
     public static final ItemMESBase nitinolIngot = new ItemNitinolIngot();
 
@@ -32,6 +33,12 @@ public class MESItems {
     public static final ItemMESBase fusionReactorInert = new ModuleFusionReactorInert();
     public static final ItemMESBase fusionReactorActive = new ModuleFusionReactorActive();
     public static final ItemMESBase titaniumPlating = new ModuleTitaniumPlating();
+    public static final ItemMESBase ionThruster = new ModuleIonThruster();
+    public static final ItemMESBase servo = new ModuleServo();
+    public static final ItemMESBase pulseHeatGenerator = new ModulePulseHeatGenerator();
+    public static final ItemMESBase vectorFeildGenerator = new ModuleVectorFeildGenerator();
+    public static final ItemMESBase shockAbsorber = new ModuleShockAbsorber();
+    public static final ItemMESBase autoFeeder = new ModuleAutoFeeder();
 
     public static final ItemMESArmor exoHelmet = new ItemExoHelmet();
     public static final ItemMESArmor exoChestplate = new ItemExoChestplate();
@@ -46,6 +53,7 @@ public class MESItems {
         titaniumPlate.register();
 
         nickelDust.register();
+        lithiumDust.register();
 
         nitinolIngot.register();
 
@@ -66,6 +74,12 @@ public class MESItems {
         fusionReactorInert.register();
         fusionReactorActive.register();
         titaniumPlating.register();
+        ionThruster.register();
+        servo.register();
+        pulseHeatGenerator.register();
+        vectorFeildGenerator.register();
+        shockAbsorber.register();
+        autoFeeder.register();
 
 
         poke.register();
