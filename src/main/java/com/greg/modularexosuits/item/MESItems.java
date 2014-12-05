@@ -16,6 +16,8 @@ public class MESItems {
     public static final ItemMESBase titaniumNugget = new ItemTitaniumNugget();
     public static final ItemMESBase titaniumPlate = new ItemTitaniumPlate();
 
+    public static final ItemMESBase deuterium = new ItemDeuterium();
+
     public static final ItemMESBase nickelDust = new ItemNickelDust();
     public static final ItemMESBase lithiumDust = new ItemLithiumDust();
 
@@ -51,6 +53,8 @@ public class MESItems {
         titaniumIngot.register();
         titaniumNugget.register();
         titaniumPlate.register();
+
+        deuterium.register();
 
         nickelDust.register();
         lithiumDust.register();
